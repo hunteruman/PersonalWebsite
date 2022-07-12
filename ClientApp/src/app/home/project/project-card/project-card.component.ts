@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 
 @Component({
@@ -9,11 +9,6 @@ import { Component } from "@angular/core";
 
 )
 export class ProjectCardComponent{
-  Project: any = {
-    "Id": 1,
-    "Name": "This Website!",
-    "Langs": "Angular",
-    "Year": 2022,
-    "Desc": "Temp"
-  }
+  @Input() project : any
+
 }
