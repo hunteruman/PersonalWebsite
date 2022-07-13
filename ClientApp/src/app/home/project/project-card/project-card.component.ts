@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core";
+import { IProject } from "../IProject.interface";
 
 
 @Component({
@@ -9,6 +10,6 @@ import { Component, Input } from "@angular/core";
 
 )
 export class ProjectCardComponent{
-  @Input() project : any
+  @Input() project : IProject
 
 }

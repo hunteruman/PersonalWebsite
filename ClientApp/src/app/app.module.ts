@@ -9,6 +9,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectCardComponent } from './home/project/project-card/project-card.component';
 import { ProjectListComponent } from './home/project/project-list/project-list.component';
+import { PortfolioService } from './services/portfolio.service';
 
 
 @NgModule({
@@ -27,7 +28,9 @@ import { ProjectListComponent } from './home/project/project-list/project-list.c
       { path: '', component: HomeComponent, pathMatch: 'full' },
     ])
   ],
-  providers: [],
+  providers: [
+    PortfolioService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
