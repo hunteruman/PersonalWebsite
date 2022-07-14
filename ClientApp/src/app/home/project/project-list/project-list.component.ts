@@ -10,7 +10,7 @@ import { IProject } from '../IProject.interface';
 })
 export class ProjectListComponent implements OnInit {
 
-  Projects: Array<IProject>
+  Projects: Array<IProject>;
 
   constructor(private portfolioService: PortfolioService) { }
 
