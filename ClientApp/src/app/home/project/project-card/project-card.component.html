@@ -1,9 +1,10 @@
 <div class ="card">
   <div class="card-img-wrapper">
-    <img class="projImg" src="assets/images/folder.png">
+    <img *ngIf="project.Image" class="projImg" src="assets/images/{{project.Image}}.png">
+    <img *ngIf="!project.Image" class="projImg" src="assets/images/folder.png">
     <ul class="list-inline text-end member-icons animate">
       <li class="list-inline-item">
-        <button class="btn btn-primary"><i class="fa-brands fa-github"></i></button>
+        <button class="btn btn-primary"><a href="{{project.GitHub}}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></button>
       </li>
     </ul>
   </div>

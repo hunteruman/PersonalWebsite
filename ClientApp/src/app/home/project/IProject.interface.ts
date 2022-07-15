@@ -4,4 +4,6 @@ export interface IProject {
   Langs: string;
   Year: number;
   Desc: string;
+  GitHub: string;
+  Image?: string;
 }

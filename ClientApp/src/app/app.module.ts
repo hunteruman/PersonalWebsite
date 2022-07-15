@@ -11,6 +11,14 @@ import { ProjectCardComponent } from './home/project/project-card/project-card.c
 import { ProjectListComponent } from './home/project/project-list/project-list.component';
 import { PortfolioService } from './services/portfolio.service';
 
+/*
+
+//Create PageNotFound Component
+
+const appRoutes: Routes = [
+  {path: '**', component: PageNotFound}
+]
+*/
 
 @NgModule({
   declarations: [
