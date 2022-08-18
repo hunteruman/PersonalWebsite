@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { SideNavComponent } from './home/side-nav/side-nav.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectCardComponent } from './home/project/project-card/project-card.component';
 import { ProjectListComponent } from './home/project/project-list/project-list.component';
@@ -23,7 +23,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    NavMenuComponent,
+    SideNavComponent,
     HomeComponent,
     ProjectCardComponent,
     ProjectListComponent
