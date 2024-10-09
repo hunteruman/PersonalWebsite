@@ -1,0 +1,22 @@
+<div class="contact-page">
+  <h2>Contact Me</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="contactForm.name" name="senderName" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="contactForm.email" name="senderEmail" required>
+    </div>
+    <div>
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" [(ngModel)]="contactForm.subject" name="subject" required>
+    </div>
+    <div>
+      <label for="body">Message:</label>
+      <textarea id="body" [(ngModel)]="contactForm.message" name="body" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
